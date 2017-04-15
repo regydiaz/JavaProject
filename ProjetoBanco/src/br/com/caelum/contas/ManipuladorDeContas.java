@@ -9,6 +9,7 @@ public class ManipuladorDeContas {
 	
 	private Conta conta;
 
+
 	public void criaConta(Evento evento){
 		String tipo= evento.getSelecionadoNoRadio("tipo");
 		if(tipo.equals("Conta Corrente")){
@@ -19,8 +20,20 @@ public class ManipuladorDeContas {
 		this.conta.setAgencia(evento.getString("agencia"));
 		this.conta.setNumero(evento.getInt("numero"));
 		this.conta.setTitular(evento.getString("titular"));
-		conta.depositar(100);
-		conta.sacar(150);
+		conta.depositar(1500);
+
 	}
-		//deposita
-}
+
+	public void saca (Evento evento){
+		double valor = evento.getDouble("valorOperacao");
+			this.conta.sacar(valor);
+
+	}
+	public void deposita(Evento evento){
+		double valor = evento.getDouble("valorOperacao");
+			this.conta.depositar(valor);
+	}}
+
+
+	
+	

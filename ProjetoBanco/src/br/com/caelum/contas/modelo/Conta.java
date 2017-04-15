@@ -15,7 +15,7 @@ public class Conta {
 	private String titular;
 	private String agencia;
 	private int numero;
-	private double saldo;
+	protected double saldo;
 	private int indentificador = 1;
 	private static int contador;
 	Data dataAbertura;
@@ -72,6 +72,18 @@ public class Conta {
 	public String getTitular() {
 		return titular;
 	}
+	
+
+	/**
+	 * Get tipo
+	 * 
+	 * @return a tipo conta
+	 */
+	public String getTipo() {
+		return "Conta";
+	}
+
+
 
 	/**
 	 * Get Agencia
@@ -180,7 +192,7 @@ public class Conta {
 			return false;
 		}
 	}
-
+	
 	/**
 	 * Realiza um deposito incluindo um valor no saldo da conta
 	 * 
