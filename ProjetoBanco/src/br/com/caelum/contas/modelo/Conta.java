@@ -15,7 +15,11 @@ public class Conta {
 	private String titular;
 	private String agencia;
 	private int numero;
+<<<<<<< HEAD
 	protected double saldo;
+=======
+	private double saldo;
+>>>>>>> b21763fea9b4db4faa71cd9c23da126e38d963bc
 	private int indentificador = 1;
 	private static int contador;
 	Data dataAbertura;
@@ -43,7 +47,10 @@ public class Conta {
 	 * 
 	 * @param agencia
 	 * @param numero
+<<<<<<< HEAD
 	 * @author regiane
+=======
+>>>>>>> b21763fea9b4db4faa71cd9c23da126e38d963bc
 	 */
 	public Conta(String agencia, int numero) {
 		this("", agencia, numero, 0);
@@ -72,6 +79,7 @@ public class Conta {
 	public String getTitular() {
 		return titular;
 	}
+<<<<<<< HEAD
 	
 
 	/**
@@ -84,6 +92,8 @@ public class Conta {
 	}
 
 
+=======
+>>>>>>> b21763fea9b4db4faa71cd9c23da126e38d963bc
 
 	/**
 	 * Get Agencia
@@ -192,7 +202,11 @@ public class Conta {
 			return false;
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> b21763fea9b4db4faa71cd9c23da126e38d963bc
 	/**
 	 * Realiza um deposito incluindo um valor no saldo da conta
 	 * 

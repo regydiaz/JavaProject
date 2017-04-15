@@ -11,5 +11,9 @@ public class TestaJar {
 		//OlaMundo.main(args);
 		//TelaDeContas.main(args);
 	}
+<<<<<<< HEAD
 	
+=======
+		
+>>>>>>> b21763fea9b4db4faa71cd9c23da126e38d963bc
 }
